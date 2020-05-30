@@ -1,0 +1,1067 @@
+{
+	"info": {
+		"_postman_id": "d827ff34-433d-46dc-b010-6651d7df9c0f",
+		"name": "cmp-api-local.postman_collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Parts-items",
+			"item": [
+				{
+					"name": "getAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_HOST}}/mo/management/v2.1/part-item/",
+							"host": [
+								"{{API_HOST}}"
+							],
+							"path": [
+								"mo",
+								"management",
+								"v2.1",
+								"part-item",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getDetail",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_HOST}}/mo/management/v2.1/part-item/:id",
+							"host": [
+								"{{API_HOST}}"
+							],
+							"path": [
+								"mo",
+								"management",
+								"v2.1",
+								"part-item",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createPart-item",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"description\": \"ger\",\n        \"inputType\": \"aaa\",\n        \"name\": \"mess\",\n        \"no\": \"3\",\n        \"value\": \"12\",\n        \"valueType\": \"bbbb\",\n        \"partTypeID\": \"5e411e012b347f2e6c0f64e1\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_HOST}}/mo/management/v2.1/part-item/",
+							"host": [
+								"{{API_HOST}}"
+							],
+							"path": [
+								"mo",
+								"management",
+								"v2.1",
+								"part-item",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updatePart-item",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t    \"description\": \"ger\",\n        \"inputType\": \"aaa\",\n        \"name\": \"mess\",\n        \"no\": \"3\",\n        \"value\": \"12\",\n        \"valueType\": \"bbbb\",\n        \"partTypeID\": \"5e411e012b347f2e6c0f64e1\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_HOST}}/mo/management/v2.1/part-item/5e425a1884835e151cedc9a3",
+							"host": [
+								"{{API_HOST}}"
+							],
+							"path": [
+								"mo",
+								"management",
+								"v2.1",
+								"part-item",
+								"5e425a1884835e151cedc9a3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteByid",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{API_HOST}}/mo/management/v2.1/part-item/5e425a1884835e151cedc9a3",
+							"host": [
+								"{{API_HOST}}"
+							],
+							"path": [
+								"mo",
+								"management",
+								"v2.1",
+								"part-item",
+								"5e425a1884835e151cedc9a3"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Masters-items",
+			"item": [
+				{
+					"name": "getAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_HOST}}/mo/management/v2.1/masters-items/",
+							"host": [
+								"{{API_HOST}}"
+							],
+							"path": [
+								"mo",
+								"management",
+								"v2.1",
+								"masters-items",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getDetail",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_HOST}}/mo/management/v2.1/masters-items/5e426affc16d1027506039f8",
+							"host": [
+								"{{API_HOST}}"
+							],
+							"path": [
+								"mo",
+								"management",
+								"v2.1",
+								"masters-items",
+								"5e426affc16d1027506039f8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createMaster-item",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"masterItems\": {\n            \"value\": [\n                {\n                    \"id\": \"8fa932b7-f353-4270-9f53-fedafae66eea\",\n                    \"name\": \"FileInformation\",\n                    \"description\": \"\",\n                    \"inputType\": \"\",\n                    \"infrastructureType\": \"VCF\"\n                },\n                {\n                    \"id\": \"8fa932b8-04eb-445a-965f-ed2617e6ab55\",\n                    \"name\": \"NotSupport\",\n                    \"description\": \"\",\n                    \"inputType\": \"\",\n                    \"infrastructureType\": \"ECL\"\n                }\n            ]\n        }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_HOST}}/mo/management/v2.1/masters-items/",
+							"host": [
+								"{{API_HOST}}"
+							],
+							"path": [
+								"mo",
+								"management",
+								"v2.1",
+								"masters-items",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateMaster-items",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n          \"masterItems\": {\n            \"value\": [\n                {\n                    \"id\": \"8fa932b7-f353-4270-9f53-fedafae66711\",\n                    \"name\": \"acb\",\n                    \"description\": \"a\",\n                    \"inputType\": \"a\",\n                    \"infrastructureType\": \"VCF\"\n                },\n                {\n                    \"id\": \"8fa932b8-04eb-445a-965f-ed2617e6ab55\",\n                    \"name\": \"NotSupport\",\n                    \"description\": \"\",\n                    \"inputType\": \"\",\n                    \"infrastructureType\": \"ECL\"\n                }\n            ]\n        }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_HOST}}/mo/management/v2.1/masters-items/5e426affc16d1027506039f8",
+							"host": [
+								"{{API_HOST}}"
+							],
+							"path": [
+								"mo",
+								"management",
+								"v2.1",
+								"masters-items",
+								"5e426affc16d1027506039f8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteByid",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{API_HOST}}/mo/management/v2.1/masters-items/5e426affc16d1027506039f8",
+							"host": [
+								"{{API_HOST}}"
+							],
+							"path": [
+								"mo",
+								"management",
+								"v2.1",
+								"masters-items",
+								"5e426affc16d1027506039f8"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Catalogs",
+			"item": [
+				{
+					"name": "getAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_HOST}}:30000/mo/management/v2.1/catalogs",
+							"host": [
+								"{{API_HOST}}"
+							],
+							"port": "30000",
+							"path": [
+								"mo",
+								"management",
+								"v2.1",
+								"catalogs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getDetail",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_HOST}}/mo/management/v2.1/catalogs/5e4237ecf3753a03b470a5bd",
+							"host": [
+								"{{API_HOST}}"
+							],
+							"path": [
+								"mo",
+								"management",
+								"v2.1",
+								"catalogs",
+								"5e4237ecf3753a03b470a5bd"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createCatalogs",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n            \"name\": \"test_Catalog312\",\n            \"description\": \"test_Catalog3\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_HOST}}/mo/management/v2.1/catalogs/",
+							"host": [
+								"{{API_HOST}}"
+							],
+							"path": [
+								"mo",
+								"management",
+								"v2.1",
+								"catalogs",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateCatalogs",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\n\t        \"tenantID\": null,\n            \"name\": \"test_Catalog312\",\n            \"description\": \"test_Catalog3\",\n            \"partsList\": [\n                {\n                    \"id\": \"8fa93399-b630-48a9-a0c7-f54f2ae9715a\",\n                    \"name\": \"TestSegmentArea3\",\n                    \"description\": \"test\",\n                    \"partsTypeID\": \"8fa932b7-e8ef-4559-9b0e-bfb6656ad15c\",\n                    \"partsTypeName\": \"SegmentArea\",\n                    \"value\": [\n                        {\n                            \"id\": \"8fa932b7-e962-4ba2-babc-518cd0175afe\",\n                            \"delegate\": false,\n                            \"value\": \"1\"\n                        },\n                        {\n                            \"id\": \"8fa932b7-e96a-4f28-a113-901b7e94688d\",\n                            \"delegate\": false,\n                            \"value\": \"app003\"\n                        },\n                        {\n                            \"id\": \"8fa932b7-e970-4a86-a479-a972d4cdfeeb\",\n                            \"delegate\": false,\n                            \"value\": \"8fa9337d-9aea-48a2-87b8-979287af3b94\"\n                        }\n                    ],\n                    \"customValue\": [],\n                    \"attribute\": [],\n                    \"targetPartsID\": \"\"\n                },\n                {\n                    \"id\": \"8fa933a0-4df7-4e72-8192-4a10fbe24c8f\",\n                    \"name\": \"TestVMGROUP3\",\n                    \"description\": \"test\",\n                    \"partsTypeID\": \"8fa932b7-eb88-4577-93be-fc3165109e8d\",\n                    \"partsTypeName\": \"VMGroup\",\n                    \"value\": [\n                        {\n                            \"id\": \"8fa932b7-ebf2-4a63-9419-7312dbc08e9e\",\n                            \"delegate\": false,\n                            \"value\": \"8fa93385-2bf0-4dc2-80f0-4171f22bb424\"\n                        },\n                        {\n                            \"id\": \"8fa932b7-ec00-40bf-81dc-bd52c62e2e00\",\n                            \"delegate\": false,\n                            \"value\": \"8fa93385-9dbc-41a2-a704-fb3424c3298a\"\n                        },\n                        {\n                            \"id\": \"8fa932b7-ebfb-4a60-bb00-725e7ccbdff6\",\n                            \"delegate\": false,\n                            \"value\": \"true\"\n                        },\n                        {\n                            \"id\": \"8fa932b7-ec05-4e30-aec9-f579b7a664c3\",\n                            \"delegate\": false,\n                            \"value\": \"8fa93386-11b5-412a-b2df-8ef88eefe048\"\n                        }\n                    ],\n                    \"customValue\": [],\n                    \"attribute\": [],\n                    \"targetPartsID\": \"8fa93399-b630-48a9-a0c7-f54f2ae9715a\"\n                }\n                ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{CMP-API}}/mo/management/v2.1/catalogs/5e426cb0c16d1027506039f9",
+							"host": [
+								"{{CMP-API}}"
+							],
+							"path": [
+								"mo",
+								"management",
+								"v2.1",
+								"catalogs",
+								"5e426cb0c16d1027506039f9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteByid",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{API_HOST}}/mo/management/v2.1/catalogs/5e426cb0c16d1027506039f9",
+							"host": [
+								"{{API_HOST}}"
+							],
+							"path": [
+								"mo",
+								"management",
+								"v2.1",
+								"catalogs",
+								"5e426cb0c16d1027506039f9"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "PartType",
+			"item": [
+				{
+					"name": "Search All PartType",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_HOST}}/mo/management/v2.1/part-types",
+							"host": [
+								"{{API_HOST}}"
+							],
+							"path": [
+								"mo",
+								"management",
+								"v2.1",
+								"part-types"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add PartType",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"VMGroup\",\n\t\"description\":\"VMGroup VMGroup VMGroup VMGroup VMGroup VMGroup\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_HOST}}/mo/management/v2.1/part-types",
+							"host": [
+								"{{API_HOST}}"
+							],
+							"path": [
+								"mo",
+								"management",
+								"v2.1",
+								"part-types"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get One PartType",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_HOST}}/mo/management/v2.1/part-types/5e4268503fa28325e0ce0429",
+							"host": [
+								"{{API_HOST}}"
+							],
+							"path": [
+								"mo",
+								"management",
+								"v2.1",
+								"part-types",
+								"5e4268503fa28325e0ce0429"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete PartType",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{API_HOST}}/mo/management/v2.1/parts-types/5e392f241be9f51bd8075889",
+							"host": [
+								"{{API_HOST}}"
+							],
+							"path": [
+								"mo",
+								"management",
+								"v2.1",
+								"parts-types",
+								"5e392f241be9f51bd8075889"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update PartType",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \"name\":\"thanh123\",\n\t\"description\":\"Container Containe1212r Container\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_HOST}}/mo/management/v2.1/part-types/5e4268503fa28325e0ce0429",
+							"host": [
+								"{{API_HOST}}"
+							],
+							"path": [
+								"mo",
+								"management",
+								"v2.1",
+								"part-types",
+								"5e4268503fa28325e0ce0429"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "OperationEvent",
+			"item": [
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\t\r\n  \"target\": \"abcabcaaa\",\t\r\n  \"message\": \"dsfsfaafsf12312313\",\r\n   \"timeOfOccurrence\": \"1998-11-12 12:3:3\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_HOST}}/mo/intelligent/v3.0/operation-events/5e3bc52d35bdcb41f4974b37",
+							"host": [
+								"{{API_HOST}}"
+							],
+							"path": [
+								"mo",
+								"intelligent",
+								"v3.0",
+								"operation-events",
+								"5e3bc52d35bdcb41f4974b37"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\t\r\n  \"target\": \"abcabcaaa\",\t\r\n  \"message\": \"dsfsfaafsf12312313\",\r\n   \"timeOfOccurrence\": \"1998-11-12 12:3:3\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_HOST}}/mo/intelligent/v3.0/operation-events/",
+							"host": [
+								"{{API_HOST}}"
+							],
+							"path": [
+								"mo",
+								"intelligent",
+								"v3.0",
+								"operation-events",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{API_HOST}}/mo/intelligent/v3.0/operation-events/5e3bc52d35bdcb41f4974b37",
+							"host": [
+								"{{API_HOST}}"
+							],
+							"path": [
+								"mo",
+								"intelligent",
+								"v3.0",
+								"operation-events",
+								"5e3bc52d35bdcb41f4974b37"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{API_HOST}}/mo/intelligent/v3.0/operation-events/5e3bd14b0376242abc60040b",
+							"host": [
+								"{{API_HOST}}"
+							],
+							"path": [
+								"mo",
+								"intelligent",
+								"v3.0",
+								"operation-events",
+								"5e3bd14b0376242abc60040b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{API_HOST}}/mo/intelligent/v3.0/operation-events",
+							"host": [
+								"{{API_HOST}}"
+							],
+							"path": [
+								"mo",
+								"intelligent",
+								"v3.0",
+								"operation-events"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "masters",
+			"item": [
+				{
+					"name": "get all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_HOST}}/mo/management/v2.1/masters/",
+							"host": [
+								"{{API_HOST}}"
+							],
+							"path": [
+								"mo",
+								"management",
+								"v2.1",
+								"masters",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get one",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{API_HOST}}/mo/management/v2.1/masters/5e4114530e75cd2c583546e9",
+							"host": [
+								"{{API_HOST}}"
+							],
+							"path": [
+								"mo",
+								"management",
+								"v2.1",
+								"masters",
+								"5e4114530e75cd2c583546e9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"partsItemID\": \"8f9b2944-5bf3-467a-b62d-70614b76c848\",\n\t\"name\": \"testVMSize\",\n\t\"description\": \"test\",\n\t\"masterItem\" : [\n             {\n                \"id\": \"8f9b2944-5fb8-4bd5-8994-08ac6b97deb9\",\n                \"value\": \"CPU\",\n                \"description\": \"\",\n                \"inputType\": \"\",\n                \"infrastructureType\": \"VCF\"\n            }]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_HOST}}/mo/management/v2.1/masters/",
+							"host": [
+								"{{API_HOST}}"
+							],
+							"path": [
+								"mo",
+								"management",
+								"v2.1",
+								"masters",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"partsItemID\": \"8f17287f-4ea0-42a2-8430-d21ba8735bad\",\n\t\"name\": \"testVMSize2\",\n\t\"description\": \"test2\",\n\t\"value\" : [\n            {\n                \"id\": \"8f17287f-5747-4814-85e8-b064a48e1e60\",\n                \"value\": \"4\"\n            },\n            {\n                \"id\": \"8f17287f-5751-4a30-b1d4-4fff0bb11b06\",\n                \"value\": \"8\"\n            }\n\t\t]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_HOST}}/mo/management/v2.1/masters/5e4114530e75cd2c583546e9",
+							"host": [
+								"{{API_HOST}}"
+							],
+							"path": [
+								"mo",
+								"management",
+								"v2.1",
+								"masters",
+								"5e4114530e75cd2c583546e9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete one master by ID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{API_HOST}}/mo/management/v2.1/masters/5e410a09d36b67270c6b87e3",
+							"host": [
+								"{{API_HOST}}"
+							],
+							"path": [
+								"mo",
+								"management",
+								"v2.1",
+								"masters",
+								"5e410a09d36b67270c6b87e3"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "parts",
+			"item": [
+				{
+					"name": "get all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_HOST}}/mo/management/v2.1/parts/",
+							"host": [
+								"{{API_HOST}}"
+							],
+							"path": [
+								"mo",
+								"management",
+								"v2.1",
+								"parts",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add parts",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"partsTypeID\": \"8f1a75e7-a765-4e57-a859-9b306ca9e184\",\r\n\t\"name\": \"TestVM-A\",\r\n\t\"description\": \"test_description\",\r\n\t\"value\": [\r\n\t\t\t{\r\n\t\t\t\t\"id\": \"8f1c7e01-3cb4-463b-8ded-66846dfdc6b9\",\r\n\t\t\t\t\"delegate\": false,\r\n\t\t\t\t\"value\": \"test_host_name\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"id\": \"8f1c7e01-3cbf-4963-abb3-5c4884b2ec6e\",\r\n\t\t\t\t\"delegate\": false,\r\n\t\t\t\t\"value\": \"test_power_on\"\r\n\t\t\t}\r\n\t  \t]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_HOST}}/mo/management/v2.1/parts/",
+							"host": [
+								"{{API_HOST}}"
+							],
+							"path": [
+								"mo",
+								"management",
+								"v2.1",
+								"parts",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_HOST}}/mo/management/v2.1/parts/5e422ef65a3038311060682c",
+							"host": [
+								"{{API_HOST}}"
+							],
+							"path": [
+								"mo",
+								"management",
+								"v2.1",
+								"parts",
+								"5e422ef65a3038311060682c"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"partsTypeID\": \"8f1a75e7-a765-4e57-a859-9b306ca9e184\",\r\n\t\"name\": \"TestVM-A\",\r\n\t\"description\": \"test_description  test_description test_description\",\r\n\t\"value\": [\r\n\t\t\t{\r\n\t\t\t\t\"id\": \"8f1c7e01-3cb4-463b-8ded-66846dfdc6b9\",\r\n\t\t\t\t\"delegate\": true,\r\n\t\t\t\t\"value\": \"test_host_name\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"id\": \"8f1c7e01-3cbf-4963-abb3-5c4884b2ec6e\",\r\n\t\t\t\t\"delegate\": false,\r\n\t\t\t\t\"value\": \"test_power_on\"\r\n\t\t\t}\r\n\t  \t]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_HOST}}/mo/management/v2.1/parts/5e422ef65a3038311060682c",
+							"host": [
+								"{{API_HOST}}"
+							],
+							"path": [
+								"mo",
+								"management",
+								"v2.1",
+								"parts",
+								"5e422ef65a3038311060682c"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{API_HOST}}/mo/management/v2.1/parts/5e422ef65a3038311060682c",
+							"host": [
+								"{{API_HOST}}"
+							],
+							"path": [
+								"mo",
+								"management",
+								"v2.1",
+								"parts",
+								"5e422ef65a3038311060682c"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "a90b71d8-1314-40e4-91c6-d9de0f02bf2d",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "6dce5035-aa7a-4014-8863-960f16ebefdd",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
